@@ -1,12 +1,14 @@
 [user]
-name = Kirill Ishanov
-email = kirill.ishanov@gmail.com
+    name = Kirill Ishanov
+    email = kirill.ishanov@gmail.com
 [color]
-ui = true
+    ui = true
 [core]
-editor = vim
-[merge]
-tool = mymeld
-conflictstyle = diff3
-[mergetool "mymeld"]
-cmd = meld --diff $BASE $LOCAL --diff $BASE $REMOTE --diff $LOCAL $BASE $REMOTE $MERGED
+    editor = vim
+[diff]
+    tool = vimdiff
+[difftool]
+    prompt = false
+[alias]
+    lg = log --oneline --graph --decorate
+
